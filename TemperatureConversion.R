@@ -15,11 +15,11 @@ Temperature_UnitConversion = function(Data,CurrentUnit, DesiredUnit){
   if(CurrentUnit == 'Celsius' && DesiredUnit == 'Fahrenheit'){
     print("Inputs are correct, proceeding with conversion")
     print("Current Unit is 'Celsius' & Desired Unit is 'Fahrenheit'")
-    Converted_Temp = Current_Temp * (9/5) + 32
+    Converted_Temp = round((Current_Temp * (9/5) + 32),2)
     }else if(CurrentUnit == 'Fahrenheit' && DesiredUnit == 'Celsius'){
       print("Inputs are correct, proceeding with conversion")
       print("Current Unit is 'Fahrenheit' & Desired Unit is 'Celsius'")
-      Converted_Temp = round((Current_Temp ??? 32) * (5???9),2)
+      Converted_Temp = round((Current_Temp - 32) * (5/9),2)
       }else{
         print("Please provide units as 'Celsius' or 'Fahrenheit'")
       }
